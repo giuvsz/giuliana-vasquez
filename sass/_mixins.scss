@@ -1,0 +1,33 @@
+@mixin flex($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+  }
+
+@mixin grid($columns, $rows, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-gap: $gap;
+}
+
+@mixin redesSociales($red) {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: black;
+  @include flex(row, center, center);
+  font-family: $fuenteTextos;
+
+  @if $red == fb {
+    background: rgb(243, 243, 189);
+  } @else if $red == ig {
+    background: rgb(252, 252, 145);
+  } @else if $red == tw {
+    background: rgb(247, 247, 59);
+  } @else {
+    background: yellow;
+  }
+}

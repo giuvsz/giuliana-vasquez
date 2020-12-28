@@ -1,0 +1,83 @@
+
+.galeria ul {
+    width: 75%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 100px 200px 200px;
+    grid-gap: 10px;
+    grid-template-areas:
+      "foto1 foto2 foto3"
+      "foto4 foto4 foto3"
+      "foto5 foto6 foto7";
+}
+  
+.galeria ul li {
+    background: white;
+}
+  
+.galeria ul li.item1 {
+    grid-area: foto1;
+    background-color: #CF0F57;
+    color: $blanco;
+    text-align: center;
+}
+.galeria ul li.item2 {
+    grid-area: foto2;
+    background-color: #CF0F57;
+    color: $blanco;
+    text-align: center;
+}
+.galeria ul li.item3 {
+    grid-area: foto3;
+}
+.galeria ul li.item3 img {
+    width: 100%;
+    height: 100%;
+}
+.galeria ul li.item4 {
+    grid-area: foto4;
+}
+.galeria ul li.item4 img {
+    width: 100%;
+    height: 100%;
+}
+.galeria ul li.item5 {
+    grid-area: foto5;
+}
+.galeria ul li.item5 img {
+    width: 100%;
+    height: 100%;
+}
+.galeria ul li.item6 {
+    grid-area: foto6;
+    background-color: #CF0F57;
+    color: $blanco;
+    text-align: center;
+}
+.galeria ul li.item6 img {
+    width: 100%;
+    height: 50%;
+}
+  
+.galeria ul li.item7 {
+    grid-area: foto7;
+}
+.galeria ul li.item7 img {
+    width: 100%;
+    height: 100%;
+}
+  
+@media screen and (max-width: 768px) {
+    .galeria ul {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(4, 100px);
+      grid-template-areas:
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto7";
+      grid-gap: 10px;
+    }
+}

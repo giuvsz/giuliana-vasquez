@@ -1,0 +1,42 @@
+
+
+@each $nombre, $color in $social {
+  .social--#{$nombre} {
+    margin-top: 1.5em;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $color;
+    border-radius: 50%;
+  }
+
+}
+
+.footer__list {
+    margin-top: 0;
+    @include flex(row, center, center);
+  
+    li {
+      margin: 0 20px;
+  
+      a {
+        @extend %redes;
+      }
+  
+      .social--facebook {
+        @include redesSociales(fb);
+      }
+  
+      .social--instagram {
+        @include redesSociales(ig);
+      }
+  
+      .social--twitter {
+        @include redesSociales(tw);
+      }
+  
+      .social--youtube {
+        @include redesSociales(yt);
+      }
+    }
+  }

@@ -1,0 +1,81 @@
+.hero {
+    background: url("https://images.unsplash.com/photo-1588830387892-fe083a3b4630?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+        place-content: center;
+}
+
+.hero__txt {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.hero__txt span {
+    display: block;
+    font-size: 2.4em;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.hero__txt p {
+    margin: 1em 0;
+    color: white;
+    font-size: 1.3em;
+}
+
+.hero__txt .cta, .cta {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background: #FFE25E;
+    padding: .8em 1em;
+    border-radius: .3em;
+    width: fit-content;
+    color: #CF0F57;
+    font-weight: 800;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 0.6em;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+color: #fff;
+outline: 0;
+}
+  
+.first {
+-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+box-shadow: 0 0 40px 40px rgb(248, 248, 5) inset;
+}  

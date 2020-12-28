@@ -1,0 +1,51 @@
+form {
+    display: flex;
+        flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    visibility: hidden;
+
+}
+
+form input, 
+form select,
+form div,
+form textarea {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: .3em 0 .8em;
+    border-radius: .4em;
+    font-size: 1em;
+    padding: .4em .8em;
+    border: none; 
+}
+
+form textarea::placeholder {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+form div {
+    align-self: center;
+}
+
+form div label {
+    margin: 1em;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+
+    visibility: visible;
+}
+
+form input[type=submit] {
+    width: fit-content;
+    align-self: center;
+    padding: .7em 1em;
+    font-size: 1.2em;
+
+}
+
+ 

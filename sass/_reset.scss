@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    
+    list-style: none;
+    color: inherit;
+}
+
+html {
+    font-size: 16px;
+    background: #CF0F57;
+}
+
+body {
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1588830387892-fe083a3b4630?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center;
+    background-size: cover;
+    display: grid;
+        place-content: center;
+}
+
+footer {
+    background-color: #CF0F57;
+    width: 100%;
+    height: 6em;
+}
+
+.whatsapp {
+    height: 3em;
+    width: 3em;
+    position: fixed;
+        bottom: 2em;
+        right: 2em;
+}
+

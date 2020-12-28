@@ -1,0 +1,34 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "extend";
+
+
+@import "index";
+@import "contenido";
+@import "contacto";
+@import "nav";
+@import "footer";
+@import "marketing";
+
+h1 {
+    font-size: 2.8em;
+    color: $blanco;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+h2 {
+    font-size: 2.6em;
+    color: $blanco;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
